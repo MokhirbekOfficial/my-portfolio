@@ -1,0 +1,1270 @@
+/* athiti-regular - latin */
+@font-face {
+  font-family: "Athiti";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/athiti-v5-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/athiti-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* athiti-500 - latin */
+@font-face {
+  font-family: "Athiti";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/athiti-v5-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/athiti-v5-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* athiti-600 - latin */
+@font-face {
+  font-family: "Athiti";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/athiti-v5-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/athiti-v5-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* athiti-700 - latin */
+@font-face {
+  font-family: "Athiti";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/athiti-v5-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/athiti-v5-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-symbols-500 - symbols */
+@font-face {
+  font-family: "Noto Sans Symbols";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/noto-sans-symbols-v25-symbols-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-sans-symbols-v25-symbols-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-symbols-regular - symbols */
+@font-face {
+  font-family: "Noto Sans Symbols";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/noto-sans-symbols-v25-symbols-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-sans-symbols-v25-symbols-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-symbols-600 - symbols */
+@font-face {
+  font-family: "Noto Sans Symbols";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../fonts/noto-sans-symbols-v25-symbols-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-sans-symbols-v25-symbols-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-sans-symbols-700 - symbols */
+@font-face {
+  font-family: "Noto Sans Symbols";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/noto-sans-symbols-v25-symbols-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-sans-symbols-v25-symbols-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* header start */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.home {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav {
+  width: 100%;
+  background-color: transparent;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  z-index: 1111;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .title {
+  font-family: "Athiti";
+  font-weight: 700;
+  font-size: 30px;
+  color: #0c0024;
+}
+
+.navBar .title1 {
+  color: white;
+}
+.items {
+  display: flex;
+  width: 370px;
+  /* border: 1px solid yellow; */
+  justify-content: space-between;
+  font-family: "Noto Sans Symbols";
+  font-size: 18px;
+}
+/* .item {
+  border: 1px solid red;
+}
+.active {
+  border: 1px solid green;
+} */
+.active::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 5px;
+}
+.itemLink {
+  color: white;
+}
+.itemLink:hover {
+  color: crimson;
+}
+.itemLink:active {
+  color: green;
+}
+.phoneLink {
+  font-family: "Noto Sans Symbols";
+  color: white;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.phoneLink:hover {
+  color: crimson;
+}
+.phoneLink:active {
+  color: green;
+}
+.phoneWrapper i {
+  font-size: 18px;
+  color: #fcc92f;
+}
+.header {
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90deg, #fcc92f 30%, 30%, #0c0024 70%);
+}
+
+.lorem {
+  /* border: 1px solid green; */
+  height: 900px;
+}
+.leftSide {
+  display: flex;
+}
+.right {
+  width: 500px;
+  height: 220px;
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+  color: white;
+  /* border: 1px solid white; */
+}
+.rightTitle {
+  font-family: "Noto Sans Symbols";
+  font-size: 40px;
+  margin-left: 5px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .rightTitle2 {
+  letter-spacing: 5px;
+} */
+.myMame {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Noto Sans Symbols";
+}
+.rightTitle3 {
+  color: #fcc92f;
+}
+/* animation */
+.rightTitle span {
+  position: relative;
+  display: inline-block;
+}
+.rightTitle span:first-child {
+  /* color: #fcc92f; */
+  margin-right: 10px;
+}
+.rightTitle span:nth-child(2) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 0.1s;
+}
+
+.rightTitle span:nth-child(3) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 0.5s;
+}
+
+.rightTitle span:nth-child(4) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 0.9s;
+}
+
+.rightTitle span:nth-child(5) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 1.3s;
+}
+.rightTitle span:nth-child(6) {
+  color: #fcc92f;
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 1.7s;
+}
+
+.rightTitle span:nth-child(7) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 2.1s;
+}
+
+.rightTitle span:nth-child(8) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 2.5s;
+}
+
+.rightTitle span:nth-child(9) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 2.9s;
+}
+
+.rightTitle span:nth-child(10) {
+  animation: animate 3.7s alternate infinite;
+  animation-delay: 3.3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  40% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) rotate(180deg) scale(2);
+  }
+  60% {
+    transform: translateY(0px) rotate(360deg) scale(1);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg) scale(1);
+  }
+}
+.downloadFileWrapper {
+  margin-top: 10px;
+}
+
+/* download File Animation */
+/* .downloadFile {
+  margin: 0;
+} */
+
+.btn-slide2 {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 50px;
+  background: #fcc92f;
+  border: 2px solid #0099cc;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.btn-slide2 {
+  border: 2px solid #fcc92f;
+}
+
+.btn-slide2:hover {
+  background-color: white;
+}
+.btn-slide2:hover span.circle2 {
+  left: 100%;
+  margin-left: -45px;
+  background-color: #fcc92f;
+  color: #0099cc;
+  text-align: center;
+}
+
+.btn-slide2:hover span.circle2 {
+  color: white;
+}
+
+.btn-slide2:hover span.title2 {
+  left: 40px;
+  opacity: 0;
+}
+
+.btn-slide2:hover span.title-hover2 {
+  opacity: 1;
+  left: 40px;
+}
+
+.btn-slide2 span.circle2 {
+  display: block;
+  background-color: #0099cc;
+  color: #fcc92f;
+  position: absolute;
+  float: left;
+  margin: 5px;
+  line-height: 42px;
+  height: 40px;
+  width: 40px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+  background-color: white;
+  text-align: center;
+}
+
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+  position: absolute;
+  left: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Noto Sans Symbols";
+  color: #30abd5;
+  transition: 0.5s;
+}
+
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {
+  color: white;
+  left: 80px;
+}
+
+.btn-slide2 span.title-hover2 {
+  left: 80px;
+  opacity: 0;
+}
+
+.btn-slide2 span.title-hover2 {
+  color: #fcc92f;
+}
+
+.left {
+  position: relative;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.myImg {
+  position: absolute;
+  width: 450px;
+  bottom: 0px;
+  left: 150px;
+}
+.nav2 {
+  width: 100%;
+  background-color: transparent;
+  background-color: #fcc92f;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 1111;
+  transition: all 0.6s ease;
+}
+
+/* about section styling */
+
+.about {
+  /* height: 100vh; */
+  background-image: linear-gradient(180deg, #090118 65%, 65%, #0c0024 35%);
+  border-bottom: 0.0001px solid #0c0024;
+}
+
+/* .aboutWrapper {
+  display: flex;
+  color: #fff;
+} */
+.aboutMainItem {
+  display: flex;
+}
+.leftAbout,
+.rightAbout {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.leftAbout .aboutTitle,
+.aboutRightTitle {
+  font-size: 40px;
+  border-bottom: 3px solid #fcc92f;
+  width: 200px;
+  margin-bottom: 20px;
+  font-family: "Athiti";
+  font-weight: 500;
+  color: #fff;
+}
+
+.leftAbout .aboutTitle span {
+  color: #fcc92f;
+}
+
+.aboutSubTitle,
+.univesityContact {
+  font-size: 30px;
+  font-family: "Athiti";
+  font-weight: normal;
+  color: #fff;
+}
+
+.aboutText,
+.rightText {
+  font-size: 18px;
+  font-family: "Athiti";
+  color: #fff;
+  width: 500px;
+  opacity: 0.7;
+}
+
+.contactItems {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactItems .contactItem a i {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #fcc92f;
+  transition: all 0.4s ease;
+}
+
+.contactItems .contactItem a i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.skillsWrapper {
+  display: flex;
+  color: #fff;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.skillsWrapper .skillsItem {
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid white; */
+  border-radius: 14px;
+  background-color: #10012c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.skillsWrapper .skillsItem i {
+  font-size: 80px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #fcc92f;
+  transition: all 1s ease;
+}
+
+.skillsWrapper .skillsItem span {
+  font-size: 24px;
+  font-family: "Athiti";
+}
+
+.skillsWrapper .skillsItem p {
+  text-align: center;
+  font-family: "Athiti";
+  opacity: 0.7;
+  padding: 5px;
+}
+
+.skillsWrapper .skillsItem:hover i {
+  transform: scale(1.6) rotate(360deg);
+}
+
+.skillsWrapper .skillsItem:hover {
+  box-shadow: 0px 0px 20px black;
+  transform: scale(1.06);
+}
+
+/* projects section styling */
+
+.projects {
+  width: 100%;
+  background-image: linear-gradient(180deg, #0c0024 10%, 10%, #090118 90%);
+  /* border: 0.1px solid transparent; */
+  padding-bottom: 50px;
+}
+
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.projectsWrapper .projectsTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  margin-bottom: 50px;
+  width: 400px;
+  height: 162px;
+  font-family: "Athiti";
+  z-index: 1;
+}
+.projectsTitle span:first-child {
+  color: #fcc92f;
+}
+.projectsTitle span:first-child .projectSubTitle {
+  color: white;
+}
+.projectsTitle::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  content: "WORKS";
+  position: absolute;
+  color: white;
+  opacity: 0.05;
+  font-size: 120px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.projectItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectItem {
+  width: 550px;
+  height: 300px;
+  margin-bottom: 30px;
+  background-position: center;
+  align-items: center;
+  border: 3px solid #fcc92f;
+}
+
+.projectItem:first-child {
+  background-image: url(../img/photo_2021-10-27_00-24-39.jpg);
+  background-size: cover;
+}
+
+.projectItem:nth-child(2) {
+  background-image: url(../img/photo_2021-10-27_00-42-49.jpg);
+  background-size: cover;
+}
+
+.projectItem:nth-child(3) {
+  background-image: url(../img/photo_2021-10-27_00-42-55.jpg);
+  background-size: cover;
+}
+
+.projectItem:nth-child(4) {
+  background-image: url(../img/photo_2021-10-27_00-43-01.jpg);
+  background-size: cover;
+}
+
+.projectLinks {
+  display: flex;
+  width: 0%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+.projectItem:hover .projectLinks {
+  width: 100%;
+}
+
+.projectLinks span {
+  width: 300px;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Athiti";
+  font-weight: 600;
+  display: none;
+}
+
+.projectItem:hover .projectLinks span {
+  display: block;
+}
+
+/* contact section styling */
+
+.contact {
+  padding-bottom: 60px;
+  background-color: #0c0024;
+}
+
+.contactLeft {
+  width: 400px;
+  margin-left: 20px;
+}
+
+.contactWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainTitle {
+  font-size: 40px;
+  border-bottom: 3px solid #fcc92f;
+  width: 200px;
+  margin-bottom: 20px;
+  font-family: "Athiti";
+  font-weight: 500;
+  color: #fff;
+}
+
+.mainTitle span {
+  color: #fcc92f;
+}
+
+.mainTitleTex {
+  font-size: 18px;
+  font-family: "Athiti";
+  color: #fff;
+  width: 500px;
+  opacity: 0.7;
+  margin-top: 20px;
+  width: 400px;
+}
+
+.contact2Items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact2Items i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #fcc92f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact2Item i:hover {
+  transform: rotate(360deg);
+  font-size: 40px;
+}
+
+.contact2Item {
+  display: flex;
+  margin-top: 30px;
+}
+
+.itemWrapper {
+  color: #fff;
+  font-family: Athiti;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemWrapper span:first-child {
+  color: #fcc92f;
+}
+.itemWrapper a {
+  color: white;
+}
+.conteactRight {
+  width: 600px;
+  margin-left: 200px;
+  padding-top: 20px;
+}
+
+.conteactRight label {
+  font-size: 18px;
+  font-family: "Athiti";
+  color: #fff;
+  width: 500px;
+  opacity: 0.7;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#fname,
+#phone,
+#email {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: 1px solid #fcc92f;
+}
+
+#massage {
+  width: 500px;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  outline: 1px solid #fcc92f;
+}
+
+.submit {
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  font-size: 18px;
+  background-color: #fcc92f;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.submit:hover {
+  color: #fcc92f;
+  background-color: #fff;
+}
+
+.submit:active {
+  opacity: 0.5;
+}
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #090118;
+}
+
+.conIcons {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.conIcons i {
+  font-size: 30px;
+  color: #fcc92f;
+  transition: all 0.4s ease;
+}
+
+.conIcons i:hover {
+  transform: scale(1.4);
+  color: #fff;
+}
+.face {
+  height: 7000px;
+}
+.gamburger {
+  display: none;
+}
+.gamburgerIcon {
+  display: none;
+}
+.gamburgerItemLink {
+  color: #fcc92f;
+}
+@media (min-width: 1400px) {
+  .active::after {
+    display: none;
+  }
+  .myImg {
+    width: 45vw;
+    height: 90vh;
+    left: 0px;
+  }
+  .right {
+    width: 500px;
+    right: 0px;
+    height: 300px;
+    bottom: 300px;
+  }
+  .rightTitle {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+  .myImg {
+    left: 0px;
+  }
+  .aboutMainItem {
+    display: flex;
+    justify-content: space-around;
+  }
+  .leftAbout,
+  .rightAbout {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .aboutText,
+  .rightText {
+    font-size: 18px;
+    font-family: "Athiti";
+    color: #fff;
+    width: 380px;
+    opacity: 0.7;
+  }
+  .contactWrapper {
+    display: flex;
+  }
+
+  form {
+    width: 100%;
+    padding-right: auto;
+    padding-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactLeft {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .conteactRight {
+    width: 100%;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .conteactRight label {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  #fname,
+  #phone,
+  #email {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  #massage {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .submit {
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .mainTitleTex {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 900px;
+  }
+  .right {
+    width: 350px;
+    right: 30px;
+  }
+  .rightTitle {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .contactWrapper {
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+  .navBar .items {
+    width: 300px;
+  }
+  .myImg {
+    width: 350px;
+  }
+  .right {
+    width: 350px;
+    bottom: 150px;
+    right: 0px;
+  }
+  .rightTitle {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .leftAbout,
+  .rightAbout {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .aboutText,
+  .rightText {
+    font-size: 18px;
+    font-family: "Athiti";
+    color: #fff;
+    width: 300px;
+    opacity: 0.7;
+  }
+
+  .skillsWrapper {
+    flex-wrap: wrap;
+  }
+
+  .skillsItem {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .myImg {
+    display: none;
+  }
+  .right {
+    width: inherit;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 30vh;
+    left: 10vw;
+    right: 10vw;
+  }
+  .rightTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .items {
+    display: none;
+  }
+  .phoneWrapper {
+    display: none;
+  }
+  .gamburgerIcon {
+    color: white;
+    position: relative;
+    z-index: 1111;
+    font-size: 24px;
+    display: block;
+  }
+  .gamburger {
+    position: absolute;
+    display: block;
+    right: -100%;
+    top: 0px;
+    height: 100vh;
+    width: 60vw;
+    background-image: linear-gradient(65deg, #090118 50%, 50%, #0c0024 100%);
+    z-index: 111;
+    transition: all 0.8s ease;
+  }
+  .activeMenu {
+    right: 0px;
+  }
+  .gamburgerItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gamburgerItem {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Sans Symbols";
+  }
+  .items {
+    display: none;
+  }
+
+  .phoneWrapper {
+    display: none;
+  }
+  .gamburgerIcon {
+    color: white;
+    position: relative;
+    z-index: 1111;
+    font-size: 24px;
+    display: block;
+  }
+  .gamburger {
+    position: absolute;
+    display: block;
+    right: -100%;
+    top: 0px;
+    height: 100vh;
+    width: 60vw;
+    background-image: linear-gradient(65deg, #090118 50%, 50%, #0c0024 100%);
+    z-index: 111;
+    transition: all 0.8s ease;
+  }
+  .activeMenu {
+    right: 0px;
+  }
+  .gamburgerItems {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gamburgerItem {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Sans Symbols";
+  }
+
+  .aboutText,
+  .rightText {
+    font-size: 18px;
+    font-family: "Athiti";
+    color: #fff;
+    width: 80%;
+    opacity: 0.7;
+  }
+
+  .leftAbout,
+  .rightAbout {
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .aboutMainItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsItem {
+    margin-top: 30px;
+  }
+
+  .projectItem {
+    width: 450px;
+    height: 250px;
+  }
+
+  .projectsWrapper .projectsTitle {
+    width: 300px;
+    height: 62px;
+    font-size: 35px;
+  }
+
+  .projectsTitle::before {
+    font-size: 100px;
+  }
+  .contactWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    padding-right: auto;
+    padding-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactLeft {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .conteactRight {
+    width: 100%;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .conteactRight label {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  #fname,
+  #phone,
+  #email {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  #massage {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .submit {
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .mainTitleTex {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+  .right {
+    left: 3vw;
+    right: 3vw;
+  }
+  .rightTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .myMame {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .rightTitle {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .btn-slide2 {
+    box-shadow: 0px 0px 5px black;
+  }
+  .gamburger {
+    width: 80%;
+  }
+
+  .projectItem {
+    width: 80%;
+    height: 160px;
+  }
+
+  .projectsWrapper .projectsTitle {
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectsTitle::before {
+    font-size: 60px;
+  }
+  .conIcons {
+    width: 300px;
+  }
+  .conteactRight label {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  #fname,
+  #phone,
+  #email {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+  }
+
+  #massage {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .submit {
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
